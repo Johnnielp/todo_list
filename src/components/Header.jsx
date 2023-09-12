@@ -5,7 +5,7 @@ import PersonOff from "@material-ui/icons/PersonAddRounded"
 function Header() {
   return (
     <header>
-      <h1><PersonOff/> Jesters Bench Notepad</h1>
+      <h1><PersonOff/> Jesters BenchPad</h1>
     </header>
   );
 }
