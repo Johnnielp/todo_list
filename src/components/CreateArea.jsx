@@ -8,7 +8,7 @@ function CreateArea(props) {
 
   const [note, setNote] = useState({
     title: "",
-    content: ""
+    content: "",
   });
 
   function handleChange(event) {
@@ -17,7 +17,7 @@ function CreateArea(props) {
     setNote((prevNote) => {
       return {
         ...prevNote,
-        [name]: value
+        [name]: value,
       };
     });
   }
@@ -26,7 +26,7 @@ function CreateArea(props) {
     props.onAdd(note);
     setNote({
       title: "",
-      content: ""
+      content: "",
     });
     event.preventDefault();
   }
@@ -51,7 +51,7 @@ function CreateArea(props) {
           onClick={expand}
           onChange={handleChange}
           value={note.content}
-          placeholder="Bench a Jester"
+          placeholder="What's on your mind?"
           rows={isExpanded ? 3 : 1}
         />
         <Zoom in={isExpanded}>
